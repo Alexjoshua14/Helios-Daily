@@ -7,7 +7,7 @@ interface ReadMoreProps {
 
 const ReadMore: FC<ReadMoreProps> = ({ url }) => {
   return (
-    <Link href="/" className="px-9 py-3 tracking-[.14em] font-medium bg-orange-600/80">
+    <Link href="/" className="px-9 py-3 tracking-[.14em] bg-soft-red text-white">
       {`Read more`.toUpperCase()}
     </Link>
   )

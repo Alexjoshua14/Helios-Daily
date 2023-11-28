@@ -16,17 +16,17 @@ const TrendingArticleItem: FC<TrendingArticleItemProps> = ({ index, title, descr
       </div>
       <div className="flex flex-col justify-around">
         <div className="">
-          <h3 className="text-3xl font-semibold text-slate-200/80">
+          <h3 className="text-3xl font-semibold text-tertiary">
             {`${index.toString().padStart(2, '0')}`}
           </h3>
         </div>
-        <div className=" w-full flex items-center">
-          <h4 className="font-semibold">
+        <div className="w-full flex items-center">
+          <h4>
             {title}
           </h4>
         </div>
         <div className="w-full">
-          <p className="leading-loose text-sm font-light text-slate-300">
+          <p className="leading-loose text-sm font-light text-secondary">
             {description}
           </p>
         </div>

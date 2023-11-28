@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between py-20 px-6">
+    <main className="flex min-h-screen flex-col items-center justify-between py-20 page-gutter">
       <div className="z-10 max-w-5xl w-full flex flex-col gap-24">
         <HeadlineArticle />
         <NewArticles />
