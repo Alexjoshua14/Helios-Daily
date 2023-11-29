@@ -1,4 +1,6 @@
 import { cn } from '@/lib/utils'
+import Image from 'next/image'
+import Link from 'next/link'
 import { FC, HTMLAttributes } from 'react'
 
 interface TrendingArticleItemProps extends HTMLAttributes<HTMLDivElement> {
@@ -6,26 +8,24 @@ interface TrendingArticleItemProps extends HTMLAttributes<HTMLDivElement> {
   title: string
   description: string
   image: string
-  url: string
+  link: string
 }
 
-const TrendingArticleItem: FC<TrendingArticleItemProps> = ({ index, title, description, image, url, className }) => {
+const TrendingArticleItem: FC<TrendingArticleItemProps> = ({ index, title, description, image, link, className }) => {
   return (
     <div className={cn("h-36 grid grid-cols-[1fr_2fr] gap-8 md:gap-4 min-w-[270px] w-full max-w-[400px] md:w-2/5", className)}>
-      <div className="border-2 border-pink-700/60 bg-pink-700/20">
-
+      <div className="relative">
+        <Image src={image} alt={title} layout="fill" objectFit="contain" />
       </div>
       <div className="flex flex-col justify-around">
-        <div className="">
-          <h3 className="text-3xl font-semibold text-tertiary">
-            {`${index.toString().padStart(2, '0')}`}
-          </h3>
-        </div>
-        <div className="w-full flex items-center">
+        <h3 className="text-3xl font-semibold text-tertiary">
+          {`${index.toString().padStart(2, '0')}`}
+        </h3>
+        <Link href={link} className="w-full flex items-center hover:text-soft-red transition-colors">
           <h4>
             {title}
           </h4>
-        </div>
+        </Link>
         <div className="w-full">
           <p className="leading-loose text-sm font-light text-secondary">
             {description}

@@ -1,8 +1,9 @@
 import HeadlineArticle from '@/components/homePage/headline/headlineArticle'
 import NewArticles from '@/components/homePage/new/newArticles'
-import TrendingArticles from '@/components/homePage/trending/trendingArticles'
+import TrendingArticles, { TrendingArticlesSkeleton } from '@/components/homePage/trending/trendingArticles'
 import Image from 'next/image'
 import Link from 'next/link'
+import { Suspense } from 'react'
 
 export default function Home() {
   return (
@@ -12,8 +13,9 @@ export default function Home() {
           <HeadlineArticle />
           <NewArticles />
         </div>
-
-        <TrendingArticles />
+        <Suspense fallback={<TrendingArticlesSkeleton />}>
+          <TrendingArticles />
+        </Suspense>
       </div>
     </main>
   )
