@@ -11,11 +11,7 @@ This is a solution to the [News homepage challenge on Frontend Mentor](https://w
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
+ 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
@@ -28,21 +24,14 @@ Users should be able to:
 - See hover and focus states for all interactive elements on the page
 
 ### Screenshot
-
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+<img src="https://github.com/Alexjoshua14/Helios-Daily/assets/59298565/04bb79ab-4425-488b-8209-9b6038be2af0" />
+<img src="https://github.com/Alexjoshua14/Helios-Daily/assets/59298565/9a5998a2-4089-4770-9a68-96c017ce9cf0" width="200" />
+<img src="https://github.com/Alexjoshua14/Helios-Daily/assets/59298565/8445d9d3-5392-4e8c-9e1c-15d13ea0d0d6" width="200" />
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/Alexjoshua14/Helios-Daily/)
+- Live Site URL: [Live Website](https://helios-daily.vercel.app/)
 
 ## My process
 
@@ -54,8 +43,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - CSS Grid
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- [Next.js 14](https://nextjs.org/) - React framework
+- [Tailwind CSS](https://tailwindcss.com/) - For Styling
 
 **Note: These are just examples. Delete this note and replace the list above with your own choices**
 
@@ -65,6 +54,6 @@ Through this simple project I continued to refine my abilities to translate desi
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [Alex Joshua](https://alexjoshua.com)
+- Frontend Mentor - [@alexjoshua14](https://www.frontendmentor.io/profile/Alexjoshua14)
+- LinkedIn - [Alex Joshua](https://www.linkedin.com/in/alexander-joshua)
