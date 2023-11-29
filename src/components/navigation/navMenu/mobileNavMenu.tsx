@@ -18,7 +18,7 @@ const MobileNavMenu: FC<MobileNavMenuProps> = ({ navOptions }) => {
       <SheetTrigger className="h-full page-gutter-x">
         <Image src="/images/icon-menu.svg" alt="Menu" width="36" height="36" />
       </SheetTrigger>
-      <SheetContent className="pt-40 bg-primary/20 backdrop-blur-xl">
+      <SheetContent className="pt-40 bg-primary/20 backdrop-blur-xl" onOpenAutoFocus={e => e.preventDefault()} onCloseAutoFocus={e => e.preventDefault()}>
 
         <ul className="flex flex-col gap-8">
           {navOptions.map((option, index) => (
