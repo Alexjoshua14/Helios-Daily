@@ -6,11 +6,17 @@ import Image from 'next/image'
 import { Sheet, SheetClose, SheetContent, SheetDescription, SheetHeader, SheetTrigger } from '@/components/ui/sheet'
 import NavOption from './navOption'
 
-interface MobileNavMenuProps {
+interface DesktopNavMenuProps {
   navOptions: { href: string, text: string }[]
 }
 
-const MobileNavMenu: FC<MobileNavMenuProps> = ({ navOptions }) => {
+/**
+ * Desktop navigation menu
+ * Displays the navigation options as a horizontal list
+ * 
+ * @param navOptions navigation options to display with href and text
+ */
+const DesktopNavMenu: FC<DesktopNavMenuProps> = ({ navOptions }) => {
   const [open, setOpen] = useState(false)
 
   return (
@@ -28,4 +34,4 @@ const MobileNavMenu: FC<MobileNavMenuProps> = ({ navOptions }) => {
   )
 }
 
-export default MobileNavMenu
+export default DesktopNavMenu

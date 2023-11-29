@@ -7,6 +7,13 @@ interface TrendingArticlesProps {
 
 }
 
+/**
+ * Trending articles section
+ * Displays the trending articles
+ * 
+ * Artificially delays the loading of the articles to show the skeleton
+ * 
+ */
 export async function TrendingArticles() {
   const { trendingArticles } = require('@/lib/data')
 
@@ -30,6 +37,11 @@ export async function TrendingArticles() {
   )
 }
 
+/**
+ * Trending articles skeleton
+ * Displays the skeleton for the trending articles
+ * 
+ */
 export function TrendingArticlesSkeleton() {
   return (
     <div className="flex flex-col md:flex-row md:flex-wrap md:items-center md:justify-around gap-12 md:gap-4 md:gap-y-8">

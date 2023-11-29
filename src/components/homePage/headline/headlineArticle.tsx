@@ -4,6 +4,11 @@ import Image from 'next/image'
 import { headline } from '@/lib/data'
 import { Skeleton } from '@/components/ui/skeleton'
 
+/**
+ * Headline article
+ * Displays the headline article
+ * 
+ */
 export function HeadlineArticle() {
   return (
     <div className="flex flex-col gap-4 md:gap-8 ">

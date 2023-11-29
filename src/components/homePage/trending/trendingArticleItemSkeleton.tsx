@@ -1,6 +1,10 @@
 import { Skeleton } from '@/components/ui/skeleton'
 import { FC } from 'react'
 
+/**
+ * Trending article item skeleton
+ * 
+ */
 const TrendingArticleItemSkeleton = ({ }) => {
   return (
     <div className={"h-36 grid grid-cols-[1fr_2fr] gap-8 md:gap-4 min-w-[270px] w-full max-w-[400px] md:w-2/5"}>

@@ -1,7 +1,10 @@
 import { FC } from 'react'
 import NewArticleItem from './newArticleItem'
 
-export async function NewArticles() {
+/**
+ * New articles section
+ */
+export function NewArticles() {
   const { newArticles } = require('@/lib/data')
 
   return (

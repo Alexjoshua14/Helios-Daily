@@ -5,6 +5,11 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Suspense } from 'react'
 
+/**
+ * Home page
+ * Displays the headline article, new articles and trending articles
+ * 
+ */
 export default function Home() {
   return (
     <main className="min-h-screen max-w-7xlxl flex flex-col items-center justify-center page-gutter">

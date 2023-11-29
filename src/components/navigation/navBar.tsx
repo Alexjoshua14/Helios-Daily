@@ -16,6 +16,11 @@ const navOptions: { href: string, text: string }[] = [
   { href: '/', text: 'Categories' }
 ]
 
+/**
+ * Navigation bar
+ * Displays the navigation bar with the navigation menu
+ * 
+ */
 const NavBar: FC<NavBarProps> = ({ }) => {
   return (
     <nav className="z-40 fixed top-0 left-0 w-full nav-height page-gutter-l flex items-center justify-between bg-gradient-to-t from-white/20 to-white backdrop-blur-xl">

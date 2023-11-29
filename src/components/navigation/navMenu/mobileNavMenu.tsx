@@ -10,6 +10,12 @@ interface MobileNavMenuProps {
   navOptions: { href: string, text: string }[]
 }
 
+/**
+ * Mobile navigation menu
+ * Displays a menu with the navigation options as a side dialog
+ * 
+ * @param navOptions navigation options to display with href and text
+ */
 const MobileNavMenu: FC<MobileNavMenuProps> = ({ navOptions }) => {
   const [open, setOpen] = useState(false)
 
@@ -19,7 +25,6 @@ const MobileNavMenu: FC<MobileNavMenuProps> = ({ navOptions }) => {
         <Image src="/images/icon-menu.svg" alt="Menu" width="36" height="36" />
       </SheetTrigger>
       <SheetContent className="pt-40 bg-primary/20 backdrop-blur-xl" onOpenAutoFocus={e => e.preventDefault()} onCloseAutoFocus={e => e.preventDefault()}>
-
         <ul className="flex flex-col gap-8">
           {navOptions.map((option, index) => (
             <li key={`mobile-navigation-${option.text}`}>
@@ -31,7 +36,6 @@ const MobileNavMenu: FC<MobileNavMenuProps> = ({ navOptions }) => {
             </li>
           ))}
         </ul>
-
       </SheetContent>
     </Sheet>
   )

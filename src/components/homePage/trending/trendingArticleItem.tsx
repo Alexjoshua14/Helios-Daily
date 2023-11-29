@@ -11,6 +11,17 @@ interface TrendingArticleItemProps extends HTMLAttributes<HTMLDivElement> {
   link: string
 }
 
+/**
+ * Trending article item
+ * 
+ * @param index index of the article in the list
+ * @param title article title
+ * @param description article description
+ * @param image link to image of the article
+ * @param link link to the article
+ * @param className optional className
+ * @returns 
+ */
 const TrendingArticleItem: FC<TrendingArticleItemProps> = ({ index, title, description, image, link, className }) => {
   return (
     <div className={cn("h-36 grid grid-cols-[1fr_2fr] gap-8 md:gap-4 min-w-[270px] w-full max-w-[400px] md:w-2/5", className)}>
