@@ -11,7 +11,7 @@ interface NewArticleItemProps extends HTMLAttributes<HTMLDivElement> {
 
 const NewArticleItem: FC<NewArticleItemProps> = ({ title, description, image, url, className, lastArticle = false, ...props }) => {
   return (
-    <div className={cn(`w-full h-40 py-8 grid grid-rows-[1fr_2fr] gap-3 ${!lastArticle && "border-b-[1px] border-b-slate-500/50}"}`, className)}>
+    <div className={cn(`w-full py-3 flex flex-col gap-2 ${!lastArticle && "border-b-[1px] border-b-light-grey-blue/50"}`, className)}>
       <div className="text-light-primary">
         <h3>
           {title}
