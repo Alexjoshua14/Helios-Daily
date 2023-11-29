@@ -6,10 +6,13 @@ import Link from 'next/link'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between py-20 page-gutter">
-      <div className="z-10 max-w-5xl w-full flex flex-col gap-24">
-        <HeadlineArticle />
-        <NewArticles />
+    <main className="min-h-screen max-w-7xlxl flex flex-col items-center justify-center page-gutter">
+      <div className="max-w-[500px] sm:max-w-none flex flex-col justify-center gap-24 sm:gap-14 md:gap-8">
+        <div className="z-10 w-full flex flex-col gap-24 sm:gap-14 md:grid md:grid-cols-[2fr_1fr] md:gap-6">
+          <HeadlineArticle />
+          <NewArticles />
+        </div>
+
         <TrendingArticles />
       </div>
     </main>
