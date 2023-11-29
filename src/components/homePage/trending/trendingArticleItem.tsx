@@ -26,7 +26,7 @@ const TrendingArticleItem: FC<TrendingArticleItemProps> = ({ index, title, descr
   return (
     <div className={cn("h-36 grid grid-cols-[1fr_2fr] gap-8 md:gap-4 min-w-[270px] w-full max-w-[400px] md:w-2/5", className)}>
       <div className="relative">
-        <Image src={image} alt={title} layout="fill" objectFit="contain" />
+        <Image src={image} alt={title} fill className="object-contain" />
       </div>
       <div className="flex flex-col justify-around">
         <h3 className="text-3xl font-semibold text-tertiary">
