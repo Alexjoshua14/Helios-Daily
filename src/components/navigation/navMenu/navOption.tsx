@@ -8,7 +8,7 @@ interface NavOptionProps {
 }
 
 const NavOption: FC<NavOptionProps> = ({ href, text, onClick }) => (
-  <Link href={href} className="w-full h-full md:px-3 md:grid md:place-content-center text-2xl md:text-lg text-secondary/80 font-medium md:font-light antialiased" onClick={onClick}>
+  <Link href={href} className="w-full h-full md:px-3 md:grid md:place-content-center text-2xl md:text-lg text-secondary/80 hover:text-soft-orange font-medium md:font-light antialiased transition-colors" onClick={onClick}>
     {text}
   </Link>
 )
