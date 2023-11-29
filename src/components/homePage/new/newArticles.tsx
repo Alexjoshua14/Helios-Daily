@@ -8,7 +8,7 @@ export function NewArticles() {
   const { newArticles } = require('@/lib/data')
 
   return (
-    <div className="p-4 flex flex-col gap-4 bg-dark-blue">
+    <div className="h-fit p-4 flex flex-col gap-4 bg-dark-blue">
       <h2 className="text-4xl font-semibold text-soft-orange">New</h2>
       <div className="flex flex-col gap-3">
         {newArticles.map((article: any, index: number) => (
