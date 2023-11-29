@@ -12,7 +12,7 @@ body {
   }
 
   h3 {
-    @apply text-xl font-bold tracking-wide;
+    @apply text-xl md:text-base lg:text-lg leading-snug font-bold tracking-wide;
   }
 
   h4 {
@@ -25,7 +25,23 @@ body {
 }
 
 @layer utilities {
+  .page-gutter-x {
+    @apply px-4 sm:px-10 lg:px-20;
+  }
+
+  .page-gutter-l {
+    @apply pl-4 sm:pl-10 lg:pl-20;
+  }
+
+  .page-gutter-y {
+    @apply py-20 sm:pt-36;
+  }
+
   .page-gutter {
-    @apply px-4;
+    @apply page-gutter-x page-gutter-y;
+  }
+
+  .nav-height {
+    @apply h-16 sm:h-32;
   }
 }
