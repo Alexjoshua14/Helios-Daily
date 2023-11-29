@@ -1,12 +1,20 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { FC } from 'react'
-import MobileNavBar from './mobile/mobileNavMenu'
-import DesktopNavMenu from './desktop/desktopNavMenu'
+import MobileNavBar from './navMenu/mobileNavMenu'
+import DesktopNavMenu from './navMenu/desktopNavMenu'
 
 interface NavBarProps {
 
 }
+
+const navOptions: { href: string, text: string }[] = [
+  { href: '/', text: 'Home' },
+  { href: '/', text: 'New' },
+  { href: '/', text: 'Popular' },
+  { href: '/', text: 'Trending' },
+  { href: '/', text: 'Categories' }
+]
 
 const NavBar: FC<NavBarProps> = ({ }) => {
   return (
@@ -17,10 +25,10 @@ const NavBar: FC<NavBarProps> = ({ }) => {
         </h1>
       </Link>
       <div className="md:hidden">
-        <MobileNavBar />
+        <MobileNavBar navOptions={navOptions} />
       </div>
-      <div className="hidden md:block">
-        <DesktopNavMenu />
+      <div className="h-full hidden md:flex items-center justify-center">
+        <DesktopNavMenu navOptions={navOptions} />
       </div>
     </nav>
   )
