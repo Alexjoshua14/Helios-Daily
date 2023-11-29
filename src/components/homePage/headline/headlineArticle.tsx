@@ -12,7 +12,7 @@ import { Skeleton } from '@/components/ui/skeleton'
 export function HeadlineArticle() {
   return (
     <div className="flex flex-col gap-4 md:gap-8 ">
-      <div className="relative w-full aspect-[8/7] sm:aspect-[2.43] bg-teal-700/40">
+      <div className="relative w-full aspect-[8/7] sm:aspect-[2.43]">
         <Suspense fallback={<Skeleton className="w-full h-full" />} >
           <Image src={headline.imageMobile} alt={headline.imageAlt} fill className="sm:hidden object-cover" />
           <Image src={headline.imageDesktop} alt={headline.imageAlt} fill className="hidden sm:block object-cover" />
