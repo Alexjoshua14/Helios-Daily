@@ -1,6 +1,7 @@
-import { FC } from 'react'
+import { cn } from '@/lib/utils'
+import { FC, HTMLAttributes } from 'react'
 
-interface TrendingArticleItemProps {
+interface TrendingArticleItemProps extends HTMLAttributes<HTMLDivElement> {
   index: number
   title: string
   description: string
@@ -8,9 +9,9 @@ interface TrendingArticleItemProps {
   url: string
 }
 
-const TrendingArticleItem: FC<TrendingArticleItemProps> = ({ index, title, description, image, url }) => {
+const TrendingArticleItem: FC<TrendingArticleItemProps> = ({ index, title, description, image, url, className }) => {
   return (
-    <div className="w-full h-36 grid grid-cols-[1fr_2fr] gap-8">
+    <div className={cn("h-36 grid grid-cols-[1fr_2fr] gap-8 md:gap-4 min-w-[270px] w-full max-w-[400px] md:w-2/5", className)}>
       <div className="border-2 border-pink-700/60 bg-pink-700/20">
 
       </div>
